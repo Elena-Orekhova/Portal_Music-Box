@@ -137,6 +137,7 @@ background-image: url(../images/banner.png);
             border-radius: 3px;
 
             background: none;
+
         }
     }
 }
@@ -194,6 +195,8 @@ background-image: url(../images/banner.png);
 .btn-design  {      
     margin: 0 25px;
     width: 100%;
+
+    font-size: 16px;
 }
 
 .pricing {
@@ -296,6 +299,8 @@ background-image: url(../images/banner.png);
         margin-bottom: 24px;
 
         align-content: start;
+
+        font-size: 12.8px;
     }
 }
 
@@ -303,6 +308,8 @@ background-image: url(../images/banner.png);
     text-decoration: none;
     color: var(--color-gray);
     padding: 16px 30px;
+
+    font-size: 12.8px;
 }
 
 
@@ -345,6 +352,8 @@ background-image: url(../images/banner.png);
     padding: 16px 40px;
 
     font-size: 12.8px; 
+
+    text-transform: none;
 }
 
 
@@ -462,6 +471,7 @@ hr {
         flex-direction: column;
         margin-bottom: 18px;
         align-items: start;
+        font-weight: 700;
     }
 
     .logo {
@@ -525,6 +535,13 @@ hr {
 
         &-body {
             width: 100%;
+        }
+    }
+
+    //page-5
+    #page-app {
+        img {
+            margin: 0 auto; 
         }
     }
 

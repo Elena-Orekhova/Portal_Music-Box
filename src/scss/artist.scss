@@ -100,6 +100,10 @@
     &-name {
         width: max-content;
 
+        h3 {
+            text-transform: uppercase;
+        }
+
         p {
             color: var(--color-artist);
         }
@@ -129,7 +133,7 @@
           height: 250px; 
           width: 100%; 
 
-          margin-bottom: 18px;
+          margin-bottom: 16px;
         }
     }
 
@@ -146,7 +150,8 @@
 
 //page 2-4 
 #page-similar {
-    padding: 100px 0;
+    padding-top: 100px;
+    margin-bottom: 100px;
 
     h2 {
         margin-bottom: 48px;
@@ -170,7 +175,7 @@
           height: 250px; 
           width: 100%; 
 
-          margin-bottom: 18px;
+          margin-bottom: 16px;
         }
     }
 
