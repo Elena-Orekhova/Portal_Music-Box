@@ -124,7 +124,6 @@
     display: flex;
     gap: 25px;
     flex-wrap: wrap;
-    line-height: 1;
 
     &-item {
         margin-right: 25px;
@@ -139,7 +138,6 @@
     }
 
     &-info {
-        line-height: 1.5;
         h3 {
             font-size: 18px;
         }
@@ -166,7 +164,6 @@
     display: flex;
     gap: 25px;
     flex-wrap: wrap;
-    line-height: 1;
 
     &-item {
         margin-right: 25px;
@@ -183,7 +180,6 @@
     }
 
     &-info {
-        line-height: 1.5;
        p {
             color: var(--color-artist);
        } 

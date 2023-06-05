@@ -645,7 +645,6 @@ hr {
   display: flex;
   gap: 25px;
   flex-wrap: wrap;
-  line-height: 1;
 }
 .discography-item {
   margin-right: 25px;
@@ -655,9 +654,6 @@ hr {
   height: 250px;
   width: 100%;
   margin-bottom: 18px;
-}
-.discography-info {
-  line-height: 1.5;
 }
 .discography-info h3 {
   font-size: 18px;
@@ -679,7 +675,6 @@ hr {
   display: flex;
   gap: 25px;
   flex-wrap: wrap;
-  line-height: 1;
 }
 .similar-item {
   margin-right: 25px;
@@ -690,9 +685,6 @@ hr {
   height: 250px;
   width: 100%;
   margin-bottom: 18px;
-}
-.similar-info {
-  line-height: 1.5;
 }
 .similar-info p {
   color: var(--color-artist);
