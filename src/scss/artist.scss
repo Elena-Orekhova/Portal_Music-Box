@@ -124,6 +124,7 @@
     display: flex;
     gap: 25px;
     flex-wrap: wrap;
+    line-height: 1;
 
     &-item {
         margin-right: 25px;
@@ -138,14 +139,14 @@
     }
 
     &-info {
+        line-height: 1.5;
         h3 {
             font-size: 18px;
-            line-height: 27px;
         }
 
        p {
-        color: var(--color-artist);
-       } 
+            color: var(--color-artist);
+        } 
     }
 }
 
@@ -165,6 +166,7 @@
     display: flex;
     gap: 25px;
     flex-wrap: wrap;
+    line-height: 1;
 
     &-item {
         margin-right: 25px;
@@ -181,13 +183,14 @@
     }
 
     &-info {
+        line-height: 1.5;
        p {
-        color: var(--color-artist);
+            color: var(--color-artist);
        } 
 
        h3 {
-        font-size: 18px;
-        line-height: 27px;
+            font-size: 18px;
+            line-height: 27px;
        }
     }
 }
