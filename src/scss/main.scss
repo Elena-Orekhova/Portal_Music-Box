@@ -1,20 +1,22 @@
 //page-1
-
 #page-description {
-    background-image: url(../images/banner.png);
     background-position: center;
-    background-size: cover; 
+    background-size: cover;
+    width: 100%; 
+}
+
+.page-description-main {
+background-image: url(../images/banner.png);
 }
 
 .navigation {
     position: absolute;
     top: 25px;
+    left: 0;
+    right: 0;
 
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    width: 100%;
-    padding: 0 120px;
 
     &-main {
         display: flex;
@@ -25,6 +27,10 @@
 
         font-size: 11px;
     }
+}
+
+.nav-wrap {
+    display: flex;
 }
 
 .logo {
@@ -48,7 +54,7 @@
     }
 }
 
-nav {
+.header-link {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
@@ -59,11 +65,15 @@ nav {
     & * {
         cursor: pointer;
     }
+}
 
-    h4 > a {
-        text-decoration: none;
-        color: var(--color-gray);
-    }
+.link {
+    color: var(--color-gray);
+    text-decoration: none;
+} 
+
+.active {
+    color: var(--color-main);  
 }
 
 .form-find {
@@ -79,7 +89,8 @@ nav {
 }
 
 .banner {
-   padding: 200px 0; 
+   padding-top: 200px;
+   padding-bottom: 200px;
 
    display: flex;
    flex-direction: column;
@@ -108,14 +119,14 @@ nav {
         gap: 30px;
         justify-content: space-between;
 
-        input {
+        &-input {
             min-width: 270px;
             min-height: 50px;
 
             padding-left: 20px;
             margin-bottom: 1.5rem;
 
-            border: solid 2px var(--color-gray);
+            border: 2px solid var(--color-gray);
             border-radius: 3px;
 
             background: none;
@@ -138,7 +149,6 @@ nav {
 
 #page-pricing {
     padding-top: 100px;
-    margin: 0 120px;
 }
 
 .forms-sub {
@@ -158,13 +168,13 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    flex-grow: 1;
-   
+ 
     text-transform: uppercase;
 
-    width: calc((100% - 100px) / 3);  
-    min-width: 370px;
+    flex-grow: 1;
+
+    width: calc((100% - 100px) / 3);
+    min-width: 300px;
 
     h3 {
         margin-top: 1rem;
@@ -224,14 +234,13 @@ nav {
 
 #page-news {
     padding-top: 100px;
-    margin: 0 120px;
 
     h2 {
         margin-bottom: 48px;
     }
 }
 
-.news-item:last-child {    /*не работает через это. а хочется, как починить*/
+.news-item:last-child {
     margin-bottom: 0;
 }
 
@@ -258,7 +267,7 @@ nav {
         & > img {
             width: calc((100% - 50px) / 2);
             object-fit: contain;
-            min-width: 374px;
+            min-width: 300px;
             flex-grow: 1;
         }
 
@@ -270,7 +279,6 @@ nav {
 
     &-body {
         width: calc((100% - 50px) / 2);
-        min-width: 374px;
         flex-grow: 1;
     }
 
@@ -295,8 +303,7 @@ nav {
 
 #page-app {
     padding-top: 100px;
-
-    margin: 0 120px 100px;
+    margin-bottom: 100px;
 
     h2 {
         margin-bottom: 48px;
@@ -304,6 +311,7 @@ nav {
 
     img {
         width: 333px;
+        min-width: 300px;
         margin-right: 144px;
     }
 }
@@ -318,7 +326,6 @@ nav {
         margin-bottom: 16px;
         color: var(--color-gray);
         max-width: 600px;
-        min-width: 374PX;
         color: var(--color-gray);
     }
 }
@@ -330,7 +337,7 @@ nav {
 
     padding: 16px 40px;
 
-    font-size: 12.8px;
+    font-size: 12.8px; 
 }
 
 
@@ -345,14 +352,14 @@ footer {
     &-top {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: start;
         gap: 30px;
-        border-bottom: solid 1px var(--color-gray);
-        padding: 3rem 120px;
-        min-width: 374px;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+
 
         &-past {
-            width: 270px;
+            min-width: calc((100% - 120px) / 4);
         }
 
         & > div {
@@ -369,7 +376,7 @@ footer {
             color: var(--color-gray);
         }
 
-        & h3 {
+        h3 { 
             margin-bottom: 15px;
             font-size: 18px;
             text-transform: uppercase;
@@ -381,9 +388,9 @@ footer {
         flex-wrap: wrap;
         justify-content: start;
         gap: 16px;
-        padding: 2rem 120px;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
         color: var(--color-gray);
-        min-width: 374px;
 
         h4 {
             font-weight: normal;
@@ -397,6 +404,10 @@ footer {
     }
 } 
 
+hr {
+    color: var(--color-gray);
+}
+
 .connection {
     display: flex;
     align-items: stretch;
@@ -405,7 +416,7 @@ footer {
 }
 
 .google {
-    background-image: url(../images/Google+.png);
+    background-image: url(../images/Google+.png); // Не через бекграунд
     width: 26px;
 }
 
@@ -422,8 +433,9 @@ footer {
 .instagram {
     background-image: url(../images/Instagram.png);
     width: 19px;
-
 }
+
+
 
 
 //media
@@ -431,8 +443,6 @@ footer {
     //page-1
     .navigation {
         display: block;
-        padding: 0 20px;
-        margin: 0;
 
         &-main {
             display: block;  
@@ -440,11 +450,16 @@ footer {
         }
     }
 
+    .nav-wrap {
+        flex-direction: column;
+        margin-bottom: 18px;
+    }
+
     .logo {
         margin-bottom: 17px;
     }
 
-    nav {
+    .header-link {
         display: block;
         margin: 0;
     } 
@@ -455,7 +470,6 @@ footer {
 
     .banner {
         padding-top: 250px;
-        margin: 0 20px;
         
         h2 {
             margin-bottom: 16px;
@@ -476,11 +490,6 @@ footer {
 
 
     //page-2
-    #page-pricing {         
-        padding: 100px 20px 0;
-        margin: 0;
-    }  
-
     .pricing-item {
 
         h3 {
@@ -491,11 +500,6 @@ footer {
 
 
     //page-3
-    #page-news {
-        padding: 100px 20px 0;
-        margin: 0;
-    }
-    
     .news {
         &-item {
         
@@ -514,24 +518,10 @@ footer {
         }
     }
 
-
-    //page-4
-    #page-app {
-        padding: 100px 20px 0;
-    
-        margin: 0 0 100px;
-    }
-
-    
     //page-5
     .footer {
-        &-top {
-            padding: 3rem 20px;
-            flex-direction: column;
-        }
-
+        &-top,
         &-bottom {
-            padding: 2rem 20px;
             flex-direction: column;
         }
     }

@@ -1,7 +1,7 @@
-@charset "UTF-8";
 :root {
   --color-gray: #cacaca;
   --color-main: #ffffff;
+  --color-artist: #E0E0E0;
   --background-main: #08020d;
   --background-find: #3C3B3D;
   --button-green: #34C176;
@@ -48,7 +48,7 @@ button {
 }
 
 .btn {
-  border: solid 1px var(--color-gray);
+  border: 1px solid var(--color-gray);
   border-radius: 5px;
   background: none;
   color: var(--color-main);
@@ -91,6 +91,21 @@ sup {
   font-size: 32px;
 }
 
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.max-width {
+  max-width: 1200px;
+  padding: 0 20px;
+  min-width: 340px;
+  margin: 0 auto;
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 30px;
@@ -102,25 +117,32 @@ sup {
   }
 }
 #page-description {
-  background-image: url(../images/banner.png);
   background-position: center;
   background-size: cover;
+  width: 100%;
+}
+
+.page-description-main {
+  background-image: url(../images/banner.png);
 }
 
 .navigation {
   position: absolute;
   top: 25px;
+  left: 0;
+  right: 0;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  width: 100%;
-  padding: 0 120px;
 }
 .navigation-main {
   display: flex;
   align-items: center;
   text-transform: uppercase;
   font-size: 11px;
+}
+
+.nav-wrap {
+  display: flex;
 }
 
 .logo {
@@ -138,19 +160,24 @@ sup {
   width: max-content;
 }
 
-nav {
+.header-link {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
   color: var(--color-gray);
   margin: 0 24px 0 90px;
 }
-nav * {
+.header-link * {
   cursor: pointer;
 }
-nav h4 > a {
-  text-decoration: none;
+
+.link {
   color: var(--color-gray);
+  text-decoration: none;
+}
+
+.active {
+  color: var(--color-main);
 }
 
 .form-find {
@@ -163,7 +190,8 @@ nav h4 > a {
 }
 
 .banner {
-  padding: 200px 0;
+  padding-top: 200px;
+  padding-bottom: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -187,12 +215,12 @@ nav h4 > a {
   gap: 30px;
   justify-content: space-between;
 }
-.form-field input {
+.form-field-input {
   min-width: 270px;
   min-height: 50px;
   padding-left: 20px;
   margin-bottom: 1.5rem;
-  border: solid 2px var(--color-gray);
+  border: 2px solid var(--color-gray);
   border-radius: 3px;
   background: none;
 }
@@ -206,7 +234,6 @@ nav h4 > a {
 
 #page-pricing {
   padding-top: 100px;
-  margin: 0 120px;
 }
 
 .forms-sub {
@@ -224,10 +251,10 @@ nav h4 > a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-grow: 1;
   text-transform: uppercase;
+  flex-grow: 1;
   width: calc((100% - 100px) / 3);
-  min-width: 370px;
+  min-width: 300px;
 }
 .pricing-item h3 {
   margin-top: 1rem;
@@ -277,13 +304,12 @@ nav h4 > a {
 
 #page-news {
   padding-top: 100px;
-  margin: 0 120px;
 }
 #page-news h2 {
   margin-bottom: 48px;
 }
 
-.news-item:last-child { /*не работает через это. а хочется, как починить*/
+.news-item:last-child {
   margin-bottom: 0;
 }
 
@@ -306,7 +332,7 @@ nav h4 > a {
 .news-item > img {
   width: calc((100% - 50px) / 2);
   object-fit: contain;
-  min-width: 374px;
+  min-width: 300px;
   flex-grow: 1;
 }
 .news-item .music-box-orange {
@@ -315,7 +341,6 @@ nav h4 > a {
 }
 .news-body {
   width: calc((100% - 50px) / 2);
-  min-width: 374px;
   flex-grow: 1;
 }
 .news-author {
@@ -334,13 +359,14 @@ nav h4 > a {
 
 #page-app {
   padding-top: 100px;
-  margin: 0 120px 100px;
+  margin-bottom: 100px;
 }
 #page-app h2 {
   margin-bottom: 48px;
 }
 #page-app img {
   width: 333px;
+  min-width: 300px;
   margin-right: 144px;
 }
 
@@ -354,7 +380,6 @@ nav h4 > a {
   margin-bottom: 16px;
   color: var(--color-gray);
   max-width: 600px;
-  min-width: 374PX;
   color: var(--color-gray);
 }
 
@@ -373,14 +398,13 @@ footer {
 .footer-top {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: start;
   gap: 30px;
-  border-bottom: solid 1px var(--color-gray);
-  padding: 3rem 120px;
-  min-width: 374px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .footer-top-past {
-  width: 270px;
+  min-width: calc((100% - 120px) / 4);
 }
 .footer-top > div {
   display: flex;
@@ -403,15 +427,19 @@ footer {
   flex-wrap: wrap;
   justify-content: start;
   gap: 16px;
-  padding: 2rem 120px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   color: var(--color-gray);
-  min-width: 374px;
 }
 .footer-bottom h4 {
   font-weight: normal;
 }
 .footer-bottom a {
   text-decoration: none;
+  color: var(--color-gray);
+}
+
+hr {
   color: var(--color-gray);
 }
 
@@ -445,17 +473,19 @@ footer {
 @media (max-width: 768px) {
   .navigation {
     display: block;
-    padding: 0 20px;
-    margin: 0;
   }
   .navigation-main {
     display: block;
     margin-bottom: 23px;
   }
+  .nav-wrap {
+    flex-direction: column;
+    margin-bottom: 18px;
+  }
   .logo {
     margin-bottom: 17px;
   }
-  nav {
+  .header-link {
     display: block;
     margin: 0;
   }
@@ -464,7 +494,6 @@ footer {
   }
   .banner {
     padding-top: 250px;
-    margin: 0 20px;
   }
   .banner h2 {
     margin-bottom: 16px;
@@ -477,17 +506,9 @@ footer {
     gap: 0;
     width: 100%;
   }
-  #page-pricing {
-    padding: 100px 20px 0;
-    margin: 0;
-  }
   .pricing-item h3 {
     font-size: 16px;
     line-height: 24px;
-  }
-  #page-news {
-    padding: 100px 20px 0;
-    margin: 0;
   }
   .news-item > img {
     width: 100%;
@@ -499,17 +520,179 @@ footer {
   .news-body {
     width: 100%;
   }
-  #page-app {
-    padding: 100px 20px 0;
-    margin: 0 0 100px;
-  }
-  .footer-top {
-    padding: 3rem 20px;
+  .footer-top, .footer-bottom {
     flex-direction: column;
   }
-  .footer-bottom {
-    padding: 2rem 20px;
-    flex-direction: column;
+}
+.page-description-artist {
+  background: url(../images/Morten_Harket.png);
+}
+
+.banner-artist {
+  padding: 200px 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.banner-artist h1 {
+  margin-bottom: 16px;
+}
+.banner-artist p {
+  margin-bottom: 48px;
+}
+
+.btn-send {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  width: 200px;
+  border: none;
+}
+
+.btn-mix {
+  background: var(--button-violet);
+}
+
+.btn-like {
+  background: var(--button-brown);
+}
+
+.button-send {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 23px;
+}
+
+.img-btn {
+  display: inline-block;
+  width: 20px;
+  margin-left: 31px;
+  filter: invert(1);
+}
+
+#page-popular-track {
+  padding: 100px 120px 0 120px;
+}
+#page-popular-track h2 {
+  text-align: left;
+  margin-bottom: 23px;
+}
+
+.popular-track {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.past-track {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 25px;
+  margin-right: 50px;
+  width: calc(50% - 50px);
+  min-width: 374px;
+  margin-top: 25px;
+}
+
+.track {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.track * {
+  font-size: 12.8px;
+}
+.track-card {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.track-img {
+  width: 55px;
+  height: 55px;
+}
+.track-name {
+  width: max-content;
+}
+.track-name p {
+  color: var(--color-artist);
+}
+
+#page-discography {
+  padding-top: 100px;
+  margin: 0 120px;
+}
+#page-discography h2 {
+  margin-bottom: 48px;
+  text-align-last: left;
+}
+
+.discography {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+.discography-item {
+  margin-right: 25px;
+  width: 250px;
+}
+.discography-item img {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 18px;
+}
+.discography-info p {
+  color: var(--color-artist);
+}
+
+#page-similar {
+  padding: 100px 0;
+  margin: 0 120px;
+}
+#page-similar h2 {
+  margin-bottom: 48px;
+  text-align-last: left;
+}
+
+.similar {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+.similar-item {
+  margin-right: 25px;
+  width: 250px;
+  text-align: center;
+}
+.similar-item img {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 18px;
+}
+.similar-info p {
+  color: var(--color-artist);
+}
+
+@media (max-width: 768px) {
+  .banner-artist {
+    padding: 200px 20px;
+  }
+  #page-popular-track {
+    padding: 100px 20px 0 20px;
+  }
+  #page-discography,
+  #page-similar {
+    margin: 0 20px;
+  }
+  .discography-item,
+  .similar-item {
+    width: 137px;
+    min-width: 137px;
+  }
+  .discography-item img,
+  .similar-item img {
+    height: 137px;
   }
 }
 
