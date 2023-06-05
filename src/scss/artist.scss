@@ -133,13 +133,14 @@
           height: 250px; 
           width: 100%; 
 
-          margin-bottom: 16px;
+          margin-bottom: 18px;
         }
     }
 
     &-info {
         h3 {
             font-size: 18px;
+            line-height: 27px;
         }
 
        p {
@@ -175,7 +176,7 @@
           height: 250px; 
           width: 100%; 
 
-          margin-bottom: 16px;
+          margin-bottom: 18px;
         }
     }
 
@@ -183,6 +184,11 @@
        p {
         color: var(--color-artist);
        } 
+
+       h3 {
+        font-size: 18px;
+        line-height: 27px;
+       }
     }
 }
 
