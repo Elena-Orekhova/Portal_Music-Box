@@ -100,7 +100,7 @@ li {
 }
 
 .max-width {
-  max-width: 1200px;
+  max-width: 1240px;
   padding: 0 20px;
   min-width: 340px;
   margin: 0 auto;
@@ -302,7 +302,7 @@ li {
 .page-pricing-footer {
   font-size: 16px;
   text-align: center;
-  width: 1200px;
+  width: 1240px;
   margin: 0 auto;
 }
 
@@ -486,6 +486,7 @@ hr {
   .nav-wrap {
     flex-direction: column;
     margin-bottom: 18px;
+    align-items: start;
   }
   .logo {
     margin-bottom: 17px;
@@ -535,7 +536,7 @@ hr {
 }
 
 .banner-artist {
-  padding-top: 200px;
+  padding-top: 250px;
   padding-bottom: 200px;
   display: flex;
   flex-direction: column;
@@ -567,7 +568,7 @@ hr {
 .button-send {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 24px;
   margin-bottom: 23px;
 }
 
@@ -648,6 +649,9 @@ hr {
   width: 100%;
   margin-bottom: 18px;
 }
+.discography-info h3 {
+  font-size: 18px;
+}
 .discography-info p {
   color: var(--color-artist);
 }
@@ -681,8 +685,7 @@ hr {
 
 @media (max-width: 768px) {
   .banner-artist {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 225px;
   }
   .button-send {
     flex-direction: column;

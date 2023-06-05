@@ -4,9 +4,8 @@
     background: url(../images/Morten_Harket.png);
 }
 
-
 .banner-artist {
-    padding-top: 200px;
+    padding-top: 250px;
     padding-bottom: 200px; 
  
     display: flex;
@@ -41,7 +40,7 @@
 .button-send {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 24px;
     margin-bottom: 23px;
 }
 
@@ -135,6 +134,10 @@
     }
 
     &-info {
+        h3 {
+            font-size: 18px;
+        }
+
        p {
         color: var(--color-artist);
        } 
@@ -182,14 +185,13 @@
 @media (max-width:768px) {
     //page 2-1
     .banner-artist {
-        padding-top: 200px;
-        padding-bottom: 200px; 
+        padding-top: 225px;
     }
 
     .button-send {
         flex-direction: column;
     }
-
+    
     //page-2-2
     #page-popular-track {
         padding-top: 100px;

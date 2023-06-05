@@ -232,7 +232,7 @@ background-image: url(../images/banner.png);
 .page-pricing-footer {
     font-size: 16px;
     text-align: center;
-    width: 1200px;
+    width: 1240px;
     margin: 0 auto;
 }
 
@@ -461,6 +461,7 @@ hr {
     .nav-wrap {
         flex-direction: column;
         margin-bottom: 18px;
+        align-items: start;
     }
 
     .logo {
