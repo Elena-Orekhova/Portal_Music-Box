@@ -33,7 +33,6 @@
     box-sizing: border-box;
 
     font-family: "Roboto Regular", sant-serif;
-    line-height: 1.5;
     color: var(--color-main);
     background-color: var(--background-main);
 }
@@ -73,7 +72,7 @@ button {
 
 h1 {
     font-size: 60px;
-    line-height: 90px;
+    line-height: 1.5;
     font-weight: bold;
 
     text-transform: uppercase;
@@ -82,12 +81,16 @@ h1 {
 
 h2 {
     font-size: 38px;
-    line-height: 57px;
+    line-height: 1.5;
     font-weight: bold;
 
     text-transform: uppercase;
 
     text-align: center;
+}
+
+h3, h4, p {
+    line-height: 1.5;
 }
 
 sup {
@@ -109,19 +112,13 @@ li {
     margin: 0 auto;
 }
 
-img {
-    line-height: 1;
-}
-
 @media (max-width:768px) {
     h1 {
         font-size: 30px;
-        line-height: 45px;
     }
 
     h2 {
         font-size: 18px;
-        line-height: 27px;
     }
 }
 

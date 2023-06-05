@@ -38,7 +38,6 @@
 :root {
   box-sizing: border-box;
   font-family: "Roboto Regular", sant-serif;
-  line-height: 1.5;
   color: var(--color-main);
   background-color: var(--background-main);
 }
@@ -73,7 +72,7 @@ button {
 
 h1 {
   font-size: 60px;
-  line-height: 90px;
+  line-height: 1.5;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
@@ -81,10 +80,14 @@ h1 {
 
 h2 {
   font-size: 38px;
-  line-height: 57px;
+  line-height: 1.5;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
+}
+
+h3, h4, p {
+  line-height: 1.5;
 }
 
 sup {
@@ -106,18 +109,12 @@ li {
   margin: 0 auto;
 }
 
-img {
-  line-height: 1;
-}
-
 @media (max-width: 768px) {
   h1 {
     font-size: 30px;
-    line-height: 45px;
   }
   h2 {
     font-size: 18px;
-    line-height: 27px;
   }
 }
 #page-description {
@@ -313,7 +310,6 @@ img {
 
 #page-news {
   padding-top: 100px;
-  line-height: 1;
 }
 #page-news h2 {
   margin-bottom: 48px;
@@ -334,12 +330,10 @@ img {
   margin-bottom: 30px;
   font-size: 30px;
   font-weight: 400;
-  line-height: 1.5;
 }
 .news-item p {
   margin-bottom: 24px;
   color: var(--color-gray);
-  line-height: 1.5;
 }
 .news-item > img {
   width: calc((100% - 50px) / 2);
@@ -374,7 +368,6 @@ img {
   color: var(--color-gray);
   padding: 16px 30px;
   font-size: 12.8px;
-  line-height: 1.5;
 }
 
 #page-app {
@@ -523,7 +516,6 @@ hr {
   }
   .pricing-item h3 {
     font-size: 16px;
-    line-height: 24px;
     font-weight: 400;
   }
   .news-item > img {
@@ -531,7 +523,6 @@ hr {
   }
   .news-item h3 {
     font-size: 16px;
-    line-height: 24px;
   }
   .news-body {
     width: 100%;
