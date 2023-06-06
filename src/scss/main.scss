@@ -1,8 +1,9 @@
 //page-1
 #page-description {
+    width: 100%; 
+
     background-position: center;
     background-size: cover;
-    width: 100%; 
 }
 
 .page-description-main {
@@ -18,7 +19,6 @@
     display: flex;
     justify-content: space-between;
 
-
     &-main {
         display: flex;
         align-items: center;
@@ -27,12 +27,10 @@
 
 .nav-wrap {
     display: flex;
-    
-    text-transform: uppercase;
-
-    font-size: 11px;
-
     align-items: center;
+   
+    font-size: 11px;
+    text-transform: uppercase;
 }
 
 .logo {
@@ -47,13 +45,13 @@
     }
     
     &-name {
-        margin-left: 16px;
-        
-        cursor: pointer;
-
         width: max-content;
 
+        margin-left: 16px;
+        
         font-weight: 400;
+
+        cursor: pointer;
     }
 }
 
@@ -61,11 +59,11 @@
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    color: var(--color-gray);
 
     margin: 0 24px 0 90px;
 
     line-height: 1.5;
+    color: var(--color-gray);
 
     & * {
         cursor: pointer;
@@ -73,10 +71,10 @@
 }
 
 .link {
-    color: var(--color-gray);
-    text-decoration: none;
     font-size: 11px;
+    text-decoration: none;
     text-transform: uppercase;
+    color: var(--color-gray);
 } 
 
 .active {
@@ -96,12 +94,12 @@
 }
 
 .banner {
-   padding-top: 200px;
-   padding-bottom: 200px;
-
    display: flex;
    flex-direction: column;
    align-items: center;
+
+   padding-top: 200px;
+   padding-bottom: 200px;
 
    h2 {
         margin-bottom: 31px;
@@ -109,16 +107,18 @@
 
    p {
         margin-bottom: 1em;
+
         text-align: center;
     }
 }
 
 .form {
     &-send {
-        max-width: 570px;
         display: flex;
         flex-direction: column;
         align-items:  center;
+
+        max-width: 570px;
     }
 
     &-field {
@@ -144,11 +144,11 @@
 .btn-access {
     width: 100%;
 
-    background: var(--button-green);
+    margin-top: 0;
 
     border: none;
 
-    margin-top: 0;
+    background: var(--button-green);
 }
 
 
@@ -163,29 +163,30 @@
     flex-wrap: wrap;
     gap: 50px;
     justify-content: space-between;
+
     margin: 49px 0 43px 0;       //50px 0
 }
 
 .pricing-item {
-    padding: 0 1.5em;
-
-    border-radius: 1em;
-
     display: flex; 
     flex-direction: column;
     align-items: center;
     justify-content: center;
- 
-    text-transform: uppercase;
-
     flex-grow: 1;
 
     width: calc((100% - 100px) / 3);
     min-width: 300px;
 
+    padding: 0 1.5em;
+
+    text-transform: uppercase;
+   
+    border-radius: 1em;
+ 
     h3 {
         margin-top: 1em;
-        margin-bottom: 200px;    
+        margin-bottom: 200px;   
+
         font-size: 24px;
         line-height: 45px;  
         font-weight: 400;
@@ -193,20 +194,21 @@
 }
 
 .btn-design  {      
-    margin: 0 25px;
     width: 100%;
+    height: 66px;
+   
+    margin: 0 25px;
+    padding: 0;
 
     font-size: 16px;
-    padding: 0;
-    height: 66px;
-
     color: var(--color-main);
 }
 
 .pricing {
     &-value {
-        font-size: 64px;
         margin-bottom: 40px;
+
+        font-size: 64px;
         line-height: 1;
 
         sup {
@@ -215,12 +217,11 @@
     }
 
     &-footer {
+        margin: 64px 0;
+
         text-align: center;
         font-size: 12.8px;
-
         text-transform: none;
-
-        margin: 64px 0;
 
         &-page {
             text-align: center;
@@ -241,10 +242,12 @@
 }
 
 .page-pricing-footer {
+    width: 1240px;
+ 
+    margin: 0 auto;
+
     font-size: 16px;
     text-align: center;
-    width: 1240px;
-    margin: 0 auto;
 }
 
 
@@ -267,26 +270,30 @@
         display: flex;
         gap: 50px;
         justify-content: center;
-
         flex-wrap: wrap;
+
         margin-bottom: 65px;
 
         h3 {
             margin-bottom: 1em;
+
             font-size: 30px;
             font-weight: 400;
         }
 
         p {
             margin-bottom: 24px;
+
             color: var(--color-gray);
         }
 
         & > img {
-            width: calc((100% - 50px) / 2);
-            object-fit: contain;
-            min-width: 300px;
             flex-grow: 1;
+
+            width: calc((100% - 50px) / 2);
+            min-width: 300px;
+
+            object-fit: contain;
         }
 
         .music-box-orange {
@@ -296,17 +303,18 @@
     }
 
     &-body {
-        width: calc((100% - 50px) / 2);
         flex-grow: 1;
+
+        width: calc((100% - 50px) / 2);
     }
 
     &-author {
         display: grid;
         grid-template-columns: repeat(3, max-content);
         grid-gap: 16px;
-        margin-bottom: 24px;
-
         align-content: start;
+
+        margin-bottom: 24px;
 
         font-size: 12.8px;
     }
@@ -318,12 +326,15 @@
 
 .btn-album {
     display: inline-block;
-    text-decoration: none;
-    color: var(--color-gray);
-    padding: 16px 30px;
 
-    font-size: 12.8px;
     height: auto;
+
+    padding: 16px 30px;
+  
+    font-size: 12.8px;
+    text-decoration: none;
+
+    color: var(--color-gray);
 }
 
 
@@ -340,6 +351,7 @@
     img {
         width: 333px;
         min-width: 300px;
+
         margin-right: 144px;
     }
 }
@@ -350,24 +362,25 @@
     justify-content: space-between;
 
     p {
-        margin-top: 16px;
-        color: var(--color-gray);
         max-width: 600px;
+
+        margin-top: 16px;
+
         color: var(--color-gray);
     }
 }
 
 .btn-download {
-    background: var(--button-brown);
-    border: none;
-    border-radius: 32px;
-
     padding: 16px 40px;
     margin-top: 16px;
 
     font-size: 12.8px; 
-
     text-transform: none;
+
+    border: none;
+    border-radius: 32px;
+
+    background: var(--button-brown);
 }
 
 
@@ -383,11 +396,13 @@ footer {
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
+
         padding-top: 4em;
         padding-bottom: 4.5em;
 
         &-past {
             min-width: calc((100% - 120px) / 4);
+
             line-height: 1.5;
         }
 
@@ -397,7 +412,6 @@ footer {
         }
 
         a {
-            text-decoration: none;
             color: var(--color-artist);
         }
 
@@ -407,6 +421,7 @@ footer {
 
         h3 { 
             margin-bottom: 15px;
+
             font-size: 18px;
             text-transform: uppercase;
         }
@@ -417,18 +432,18 @@ footer {
         flex-wrap: wrap;
         justify-content: start;
         gap: 16px;
+
         padding-top: 2.5em;
         padding-bottom: 3em;
-        color: var(--color-gray);
 
         line-height: 1.5;
+        color: var(--color-gray);
 
         h4 {
             font-weight: normal;
         }
 
-        a {
-            text-decoration: none;
+        a {     
             color: var(--color-gray);
         }
         
@@ -443,17 +458,20 @@ hr {
     display: flex;
     align-items: stretch;
     gap: 24px;
+
     height: 20px;
 }
 
 .google {
-    background-image: url(../images/Google+.png); // Не через бекграунд
     width: 26px;
+
+    background-image: url(../images/Google+.png); 
 }
 
 .twitter {
-    background-image: url(../images/Twitter.png);
     width: 22px;
+
+    background-image: url(../images/Twitter.png);
 }
 
 // .facebook {
@@ -478,8 +496,10 @@ hr {
 
     .nav-wrap {
         flex-direction: column;
-        margin-bottom: 1rem;
         align-items: start;
+
+        margin-bottom: 1rem;
+
         font-weight: 700;
     }
 
@@ -494,6 +514,7 @@ hr {
 
     .header-link {
         display: block;
+
         margin: 0;
     } 
 
@@ -517,6 +538,7 @@ hr {
         &-field {
             flex-direction: column;
             gap: 0;
+            
             width: 100%;
         }
     }
