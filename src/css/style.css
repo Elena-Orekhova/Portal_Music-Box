@@ -12,12 +12,12 @@
 
 @font-face {
   font-weight: 400;
-  font-family: "Roboto Regular";
+  font-family: "Roboto";
   src: url("../fonts/Roboto-Regular.ttf");
 }
 @font-face {
   font-weight: 700;
-  font-family: "Roboto Bold";
+  font-family: "Roboto";
   src: url("../fonts/Roboto-Bold.ttf");
 }
 * {
@@ -37,7 +37,7 @@
 
 :root {
   box-sizing: border-box;
-  font-family: "Roboto Regular", "sant-serif";
+  font-family: "Roboto", sant-serif;
   color: var(--color-main);
   background-color: var(--background-main);
 }
@@ -546,7 +546,7 @@ hr {
   }
 }
 .page-description-artist {
-  background: url(../images/Morten_Harket.png);
+  background: url("../images/Morten_Harket.png");
 }
 
 .banner-artist {
