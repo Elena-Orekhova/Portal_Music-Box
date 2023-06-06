@@ -89,7 +89,7 @@
     width: 248px;
     height: 25px;
 
-    padding-left: 5px;
+    padding: 0 0 0 5px;
 
     border: none;
     border-radius: 50px;
@@ -106,12 +106,12 @@
    align-items: center;
 
    h2 {
-    margin-bottom: 31px;
+        margin-bottom: 31px;
    }
 
    p {
-    margin-bottom: 16px;
-    text-align: center;
+        margin-bottom: 1em;
+        text-align: center;
    }
 }
 
@@ -166,7 +166,7 @@
     flex-wrap: wrap;
     gap: 50px;
     justify-content: space-between;
-    margin: 50px 0;
+    margin: 46px 0 43px 0;
 }
 
 .pricing-item {
@@ -199,6 +199,8 @@
     width: 100%;
 
     font-size: 16px;
+    padding: 0;
+    height: 66px;
 }
 
 .pricing {
@@ -206,7 +208,7 @@
         font-size: 64px;
         margin-bottom: 40px;
 
-        line-height: 1em;
+        line-height: 1;
     }
 
     &-footer {
@@ -378,8 +380,8 @@ footer {
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
-        padding-top: 62px;
-        padding-bottom: 72px;
+        padding-top: 4em;
+        padding-bottom: 4.5em;
 
         &-past {
             min-width: calc((100% - 120px) / 4);
@@ -412,8 +414,8 @@ footer {
         flex-wrap: wrap;
         justify-content: start;
         gap: 16px;
-        padding-top: 40px;
-        padding-bottom: 49px;
+        padding-top: 2.5em;
+        padding-bottom: 3em;
         color: var(--color-gray);
 
         line-height: 1.5;
@@ -469,22 +471,17 @@ hr {
     //page-1
     .navigation {
         display: block;
-
-        &-main {
-            display: block;  
-            margin-bottom: 23px;
-        }
     }
 
     .nav-wrap {
         flex-direction: column;
-        margin-bottom: 18px;
+        margin-bottom: 1rem;
         align-items: start;
         font-weight: 700;
     }
 
     .logo {
-        margin-bottom: 16px;
+        margin-bottom: 1rem;
 
         &-name {
             font-weight: 700;
@@ -502,7 +499,7 @@ hr {
     }
 
     .banner {
-        padding-top: 250px;
+        padding-top: 249px;
         
         h2 {
             margin-bottom: 16px;
@@ -528,6 +525,7 @@ hr {
         h3 {
             font-size: 16px;
             font-weight: 400;
+            line-height: 1.5;
         }
     }
 

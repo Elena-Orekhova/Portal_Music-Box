@@ -189,7 +189,7 @@ li {
 .form-find {
   width: 248px;
   height: 25px;
-  padding-left: 5px;
+  padding: 0 0 0 5px;
   border: none;
   border-radius: 50px;
   background: var(--background-find);
@@ -206,7 +206,7 @@ li {
   margin-bottom: 31px;
 }
 .banner p {
-  margin-bottom: 16px;
+  margin-bottom: 1em;
   text-align: center;
 }
 
@@ -247,7 +247,7 @@ li {
   flex-wrap: wrap;
   gap: 50px;
   justify-content: space-between;
-  margin: 50px 0;
+  margin: 46px 0 43px 0;
 }
 
 .pricing-item {
@@ -273,12 +273,14 @@ li {
   margin: 0 25px;
   width: 100%;
   font-size: 16px;
+  padding: 0;
+  height: 66px;
 }
 
 .pricing-value {
   font-size: 64px;
   margin-bottom: 40px;
-  line-height: 1em;
+  line-height: 1;
 }
 .pricing-footer {
   text-align: center;
@@ -415,8 +417,8 @@ footer {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding-top: 62px;
-  padding-bottom: 72px;
+  padding-top: 4em;
+  padding-bottom: 4.5em;
 }
 .footer-top-past {
   min-width: calc((100% - 120px) / 4);
@@ -443,8 +445,8 @@ footer {
   flex-wrap: wrap;
   justify-content: start;
   gap: 16px;
-  padding-top: 40px;
-  padding-bottom: 49px;
+  padding-top: 2.5em;
+  padding-bottom: 3em;
   color: var(--color-gray);
   line-height: 1.5;
 }
@@ -481,18 +483,14 @@ hr {
   .navigation {
     display: block;
   }
-  .navigation-main {
-    display: block;
-    margin-bottom: 23px;
-  }
   .nav-wrap {
     flex-direction: column;
-    margin-bottom: 18px;
+    margin-bottom: 1rem;
     align-items: start;
     font-weight: 700;
   }
   .logo {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
   }
   .logo-name {
     font-weight: 700;
@@ -505,7 +503,7 @@ hr {
     width: 100%;
   }
   .banner {
-    padding-top: 250px;
+    padding-top: 249px;
   }
   .banner h2 {
     margin-bottom: 16px;
@@ -521,6 +519,7 @@ hr {
   .pricing-item h3 {
     font-size: 16px;
     font-weight: 400;
+    line-height: 1.5;
   }
   .news-item > img {
     width: 100%;
@@ -657,7 +656,7 @@ hr {
 .discography-item img {
   height: 250px;
   width: 100%;
-  margin-bottom: 17px;
+  margin-bottom: 16px;
 }
 .discography-info h3 {
   font-size: 18px;
@@ -688,7 +687,7 @@ hr {
 .similar-item img {
   height: 250px;
   width: 100%;
-  margin-bottom: 17px;
+  margin-bottom: 16px;
 }
 .similar-info p {
   color: var(--color-artist);
