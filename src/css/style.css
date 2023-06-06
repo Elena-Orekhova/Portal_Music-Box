@@ -1,13 +1,13 @@
 :root {
   --color-gray: #cacaca;
   --color-main: #ffffff;
-  --color-artist: #E0E0E0;
+  --color-artist: #e0e0e0;
   --background-main: #08020d;
-  --background-find: #3C3B3D;
-  --button-green: #34C176;
-  --button-brown: #95390C;
-  --button-violet: #5328A1;
-  --colot-music-box-orange: #F89202;
+  --background-find: #3c3b3d;
+  --button-green: #34c176;
+  --button-brown: #95390c;
+  --button-violet: #5328a1;
+  --colot-music-box-orange: #f89202;
 }
 
 @font-face {
@@ -85,7 +85,9 @@ h2 {
   text-align: center;
 }
 
-h3, h4, p {
+h3,
+h4,
+p {
   line-height: 1.5;
 }
 
