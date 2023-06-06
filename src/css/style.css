@@ -247,7 +247,7 @@ li {
   flex-wrap: wrap;
   gap: 50px;
   justify-content: space-between;
-  margin: 46px 0 43px 0;
+  margin: 48px 0 43px 0;
 }
 
 .pricing-item {
@@ -267,6 +267,7 @@ li {
   margin-bottom: 200px;
   font-size: 24px;
   line-height: 45px;
+  font-weight: 400;
 }
 
 .btn-design {
@@ -503,7 +504,7 @@ hr {
     width: 100%;
   }
   .banner {
-    padding-top: 249px;
+    padding-top: 248px;
   }
   .banner h2 {
     margin-bottom: 16px;
@@ -518,8 +519,8 @@ hr {
   }
   .pricing-item h3 {
     font-size: 16px;
-    font-weight: 400;
     line-height: 1.5;
+    font-weight: 700;
   }
   .news-item > img {
     width: 100%;
@@ -656,7 +657,7 @@ hr {
 .discography-item img {
   height: 250px;
   width: 100%;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 .discography-info h3 {
   font-size: 18px;
@@ -687,7 +688,7 @@ hr {
 .similar-item img {
   height: 250px;
   width: 100%;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 }
 .similar-info p {
   color: var(--color-artist);
