@@ -206,12 +206,22 @@
 
 .pricing {
     &-value {
+        display: flex;
+
         margin-bottom: 40px;
 
-        font-size: 64px;
-        line-height: 1;
+        &-price {
+            display: flex;
 
-        sup {
+            margin-right: 1rem;
+
+            font-size: 64px;
+            line-height: 1;
+        }
+
+        &-rubl {
+            display: flex;
+
             font-size: 32px;
         }
     }
@@ -538,7 +548,7 @@ hr {
         &-field {
             flex-direction: column;
             gap: 0;
-            
+
             width: 100%;
         }
     }

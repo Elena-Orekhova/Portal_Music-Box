@@ -280,11 +280,17 @@ a {
 }
 
 .pricing-value {
+  display: flex;
   margin-bottom: 40px;
+}
+.pricing-value-price {
+  display: flex;
+  margin-right: 1rem;
   font-size: 64px;
   line-height: 1;
 }
-.pricing-value sup {
+.pricing-value-rubl {
+  display: flex;
   font-size: 32px;
 }
 .pricing-footer {
