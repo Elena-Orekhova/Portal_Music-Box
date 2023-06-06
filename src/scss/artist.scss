@@ -27,6 +27,9 @@
   align-items: center;
 
   width: 200px;
+  height: 62px;
+
+  padding: 0;
 
   border: none;
 }
@@ -44,7 +47,7 @@
   flex-wrap: wrap;
   gap: 24px;
 
-  margin-bottom: 23px;
+  margin-bottom: 24px;
 }
 
 .img-btn {
@@ -204,7 +207,7 @@
 @media (max-width: 768px) {
   // page 2-1
   .banner-artist {
-    padding-top: 225px;
+    padding-top: 224px;     //225px
   }
 
   .button-send {

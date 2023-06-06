@@ -568,6 +568,8 @@ hr {
   gap: 16px;
   align-items: center;
   width: 200px;
+  height: 62px;
+  padding: 0;
   border: none;
 }
 
@@ -583,7 +585,7 @@ hr {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  margin-bottom: 23px;
+  margin-bottom: 24px;
 }
 
 .img-btn {
@@ -707,7 +709,7 @@ hr {
 
 @media (max-width: 768px) {
   .banner-artist {
-    padding-top: 225px;
+    padding-top: 224px;
   }
   .button-send {
     flex-direction: column;
