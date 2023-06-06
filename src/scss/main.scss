@@ -1,4 +1,4 @@
-//page-1
+// page-1
 #page-description {
   width: 100%;
 
@@ -7,7 +7,7 @@
 }
 
 .page-description-main {
-  background-image: url(../images/banner.png);
+  background-image: url("../images/banner.png");
 }
 
 .navigation {
@@ -41,7 +41,7 @@
     height: 24px;
     width: 24px;
 
-    background-image: url(../images/logo.svg);
+    background-image: url("../images/logo.svg");
   }
 
   &-name {
@@ -83,7 +83,7 @@
 
 .form-find {
   width: 248px;
-  height: 28px; //25px
+  height: 28px; // 25px
 
   padding: 0 0 0 5px;
 
@@ -151,7 +151,7 @@
   background: var(--button-green);
 }
 
-//page-2
+// page-2
 
 #page-pricing {
   padding-top: 100px;
@@ -163,7 +163,7 @@
   gap: 50px;
   justify-content: space-between;
 
-  margin: 49px 0 43px 0; //50px 0
+  margin: 49px 0 43px; // 50px 0
 }
 
 .pricing-item {
@@ -239,14 +239,15 @@
 }
 
 .bg-free {
-  background-image: url(../images/subscribe_1.png);
+  background-image: url("../images/subscribe_1.png");
 }
 
 .bg-standard {
-  background-image: url(../images/subscribe_2.png);
+  background-image: url("../images/subscribe_2.png");
 }
+
 .bg-premium {
-  background-image: url(../images/subscribe_3.png);
+  background-image: url("../images/subscribe_3.png");
 }
 
 .page-pricing-footer {
@@ -258,7 +259,7 @@
   text-align: center;
 }
 
-//page-3
+// page-3
 
 #page-news {
   padding-top: 100px;
@@ -266,10 +267,6 @@
   h2 {
     margin-bottom: 48px;
   }
-}
-
-.news-item:last-child {
-  margin-bottom: 0;
 }
 
 .news {
@@ -327,6 +324,10 @@
   }
 }
 
+.news-item:last-child {
+  margin-bottom: 0;
+}
+
 .news-item-reverse {
   flex-direction: row-reverse;
 }
@@ -344,7 +345,7 @@
   color: var(--color-gray);
 }
 
-//page-4
+// page-4
 
 #page-app {
   padding-top: 100px;
@@ -389,7 +390,7 @@
   background: var(--button-brown);
 }
 
-//page-5
+// page-5
 
 footer {
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
@@ -468,17 +469,17 @@ hr {
 .google {
   width: 26px;
 
-  background-image: url(../images/Google+.png);
+  background-image: url("../images/Google.png");
 }
 
 .twitter {
   width: 22px;
 
-  background-image: url(../images/Twitter.png);
+  background-image: url("../images/Twitter.png");
 }
 
 // .facebook {
-//  background-image: url(../images/Facebook.png);
+// background-image: url(../images/Facebook.png);
 // width: 12px;
 // }
 
@@ -487,9 +488,9 @@ hr {
 // width: 19px;
 // }
 
-//media
+// media
 @media (max-width: 768px) {
-  //page-1
+  // page-1
   .navigation {
     display: block;
   }
@@ -522,7 +523,7 @@ hr {
   }
 
   .banner {
-    padding-top: 248px; //250px
+    padding-top: 248px; // 250px
 
     h2 {
       margin-bottom: 16px;
@@ -542,7 +543,7 @@ hr {
     }
   }
 
-  //page-2
+  // page-2
   .pricing-item {
     h3 {
       font-size: 16px;
@@ -550,7 +551,7 @@ hr {
     }
   }
 
-  //page-3
+  // page-3
   .news {
     &-item {
       & > img {
@@ -567,14 +568,14 @@ hr {
     }
   }
 
-  //page-5
+  // page-5
   #page-app {
     img {
       margin: 0 auto;
     }
   }
 
-  //page-5
+  // page-5
   .footer {
     &-top,
     &-bottom {

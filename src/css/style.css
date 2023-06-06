@@ -1,6 +1,6 @@
 :root {
   --color-gray: #cacaca;
-  --color-main: #ffffff;
+  --color-main: #fff;
   --color-artist: #e0e0e0;
   --background-main: #08020d;
   --background-find: #3c3b3d;
@@ -13,12 +13,12 @@
 @font-face {
   font-weight: 400;
   font-family: "Roboto Regular";
-  src: url(../fonts/Roboto-Regular.ttf);
+  src: url("../fonts/Roboto-Regular.ttf");
 }
 @font-face {
   font-weight: 700;
   font-family: "Roboto Bold";
-  src: url(../fonts/Roboto-Bold.ttf);
+  src: url("../fonts/Roboto-Bold.ttf");
 }
 * {
   box-sizing: border-box;
@@ -37,7 +37,7 @@
 
 :root {
   box-sizing: border-box;
-  font-family: "Roboto Regular", sant-serif;
+  font-family: "Roboto Regular", "sant-serif";
   color: var(--color-main);
   background-color: var(--background-main);
 }
@@ -80,7 +80,7 @@ h1 {
 h2 {
   font-size: 38px;
   line-height: 1.5;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   text-align: center;
 }
@@ -125,7 +125,7 @@ a {
 }
 
 .page-description-main {
-  background-image: url(../images/banner.png);
+  background-image: url("../images/banner.png");
 }
 
 .navigation {
@@ -155,7 +155,7 @@ a {
 .logo-img {
   height: 24px;
   width: 24px;
-  background-image: url(../images/logo.svg);
+  background-image: url("../images/logo.svg");
 }
 .logo-name {
   width: max-content;
@@ -248,7 +248,7 @@ a {
   flex-wrap: wrap;
   gap: 50px;
   justify-content: space-between;
-  margin: 49px 0 43px 0;
+  margin: 49px 0 43px;
 }
 
 .pricing-item {
@@ -305,15 +305,15 @@ a {
 }
 
 .bg-free {
-  background-image: url(../images/subscribe_1.png);
+  background-image: url("../images/subscribe_1.png");
 }
 
 .bg-standard {
-  background-image: url(../images/subscribe_2.png);
+  background-image: url("../images/subscribe_2.png");
 }
 
 .bg-premium {
-  background-image: url(../images/subscribe_3.png);
+  background-image: url("../images/subscribe_3.png");
 }
 
 .page-pricing-footer {
@@ -328,10 +328,6 @@ a {
 }
 #page-news h2 {
   margin-bottom: 48px;
-}
-
-.news-item:last-child {
-  margin-bottom: 0;
 }
 
 .news-item {
@@ -371,6 +367,10 @@ a {
   align-content: start;
   margin-bottom: 24px;
   font-size: 12.8px;
+}
+
+.news-item:last-child {
+  margin-bottom: 0;
 }
 
 .news-item-reverse {
@@ -480,12 +480,12 @@ hr {
 
 .google {
   width: 26px;
-  background-image: url(../images/Google+.png);
+  background-image: url("../images/Google.png");
 }
 
 .twitter {
   width: 22px;
-  background-image: url(../images/Twitter.png);
+  background-image: url("../images/Twitter.png");
 }
 
 @media (max-width: 768px) {

@@ -1,4 +1,4 @@
-//page 2-1
+// page 2-1
 
 .page-description-artist {
   background: url(../images/Morten_Harket.png);
@@ -57,7 +57,7 @@
   filter: invert(1);
 }
 
-//page-2-2
+// page-2-2
 #page-popular-track {
   padding-top: 100px;
 
@@ -118,7 +118,7 @@
   }
 }
 
-//page 2-3
+// page 2-3
 #page-discography {
   padding-top: 100px;
 
@@ -142,7 +142,7 @@
       height: 250px;
       width: 100%;
 
-      margin-bottom: 15px; //18px
+      margin-bottom: 15px; // 18px
     }
   }
 
@@ -157,7 +157,7 @@
   }
 }
 
-//page 2-4
+// page 2-4
 #page-similar {
   padding-top: 100px;
   margin-bottom: 100px;
@@ -184,7 +184,7 @@
       height: 250px;
       width: 100%;
 
-      margin-bottom: 15px; //18px
+      margin-bottom: 15px; // 18px
     }
   }
 
@@ -200,9 +200,9 @@
   }
 }
 
-//media
+// media
 @media (max-width: 768px) {
-  //page 2-1
+  // page 2-1
   .banner-artist {
     padding-top: 225px;
   }
@@ -211,7 +211,7 @@
     flex-direction: column;
   }
 
-  //page-2-2
+  // page-2-2
   #page-popular-track {
     padding-top: 100px;
   }

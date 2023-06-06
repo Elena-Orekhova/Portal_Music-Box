@@ -1,13 +1,13 @@
 @font-face {
   font-weight: 400;
   font-family: "Roboto Regular";
-  src: url(../fonts/Roboto-Regular.ttf);
+  src: url("../fonts/Roboto-Regular.ttf");
 }
 
 @font-face {
   font-weight: 700;
   font-family: "Roboto Bold";
-  src: url(../fonts/Roboto-Bold.ttf);
+  src: url("../fonts/Roboto-Bold.ttf");
 }
 
 * {
@@ -33,7 +33,7 @@
 :root {
   box-sizing: border-box;
 
-  font-family: "Roboto Regular", sant-serif;
+  font-family: "Roboto Regular", "sant-serif";
   color: var(--color-main);
 
   background-color: var(--background-main);
@@ -83,7 +83,7 @@ h1 {
 h2 {
   font-size: 38px;
   line-height: 1.5;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   text-align: center;
 }
