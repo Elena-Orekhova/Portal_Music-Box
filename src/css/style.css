@@ -188,7 +188,7 @@ li {
 
 .form-find {
   width: 248px;
-  height: 27px;
+  height: 28px;
   padding: 0 0 0 5px;
   border: none;
   border-radius: 50px;
@@ -225,7 +225,7 @@ li {
   min-width: 270px;
   min-height: 50px;
   padding-left: 20px;
-  margin-bottom: 1.5em;
+  margin-bottom: 24px;
   border: 2px solid var(--color-gray);
   border-radius: 3px;
   background: none;
