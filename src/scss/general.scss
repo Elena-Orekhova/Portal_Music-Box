@@ -1,12 +1,12 @@
 @font-face {
   font-weight: 400;
-  font-family: "Roboto";
+  font-family: Roboto;
   src: url("../fonts/Roboto-Regular.ttf");
 }
 
 @font-face {
   font-weight: 700;
-  font-family: "Roboto";
+  font-family: Roboto;
   src: url("../fonts/Roboto-Bold.ttf");
 }
 
@@ -33,7 +33,7 @@
 :root {
   box-sizing: border-box;
 
-  font-family: "Roboto", sant-serif;
+  font-family: Roboto, sans-serif;
   color: var(--color-main);
 
   background-color: var(--background-main);
